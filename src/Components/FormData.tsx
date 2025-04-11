@@ -36,7 +36,7 @@ const FormData: React.FC<field> = ({ field }) => {
   }
 
   return (
-    <div className="flex justify-start items-center mb-3">
+    <div className="flex justify-start items-center flex-wrap mb-3">
       <span className="text-xl font-semibold">
         {field.label.slice(0, 1).toUpperCase() + field.label.slice(1)} :
       </span>
@@ -44,7 +44,7 @@ const FormData: React.FC<field> = ({ field }) => {
         readOnly
         type={field.type}
         value={field.value}
-        className="pl-1 text-lg text-gray-900 font-medium border-none focus:outline-none focus:border-none w-4/5"
+        className="pl-1 text-lg text-gray-900 font-medium border-none focus:outline-none focus:border-none w-3/5"
       />{" "}
     </div>
   );
